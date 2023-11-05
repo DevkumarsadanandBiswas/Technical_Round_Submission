@@ -1,0 +1,111 @@
+@import url(https://developers.google.com/fonts/docs/getting_started#specifying_font_families_and_styles_in_a_stylesheet_url);
+@import url('https://fonts.googleapis.com/css?family=Roboto'); 
+
+*,
+*::before,
+*::after{
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    outline:none;
+
+}
+
+:root{
+    /* background-color */
+    --bg-white:#fff;
+
+    /* text colors */
+    --primary-text:#061738;
+    --secondary-color:yellow;
+    --light-color:white;
+    --dark-color:orange;
+    --text-white:#dee2e6;
+    --anchor-color:lightblue;
+
+   /* font family */
+    --primary-font:'Barlow condensed',sans-serif;
+    --secondary-font:'roboto',sans-serif;
+
+}
+
+header .navbar-nav {
+    text-align: right;
+}
+
+
+body,
+html{
+    color:var(--primary-text);
+    font-size: 10px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    line-height: 1.5;
+
+}
+
+h1,
+p{
+    margin:0;
+
+}
+
+h1{
+    font-size:9rem;
+    line-height:1.4;
+    font-weight: 600;
+    color:var(--primary-text)
+}
+
+p{
+    font-size:1.6rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color:var(--primary-text);
+    font-family: var(--secondary-font);
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button{
+    text-decoration: none;
+    outline:0;
+}
+
+li a{
+    color:var(--text-white);    
+}
+
+a:hover,
+button:hover{
+
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition:all 0.3s ease-in;
+    -moz-transition:all 0.3s ease-in;
+    transition:all 0.3s ease-in;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--secondary-color);
+}
